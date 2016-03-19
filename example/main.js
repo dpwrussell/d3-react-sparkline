@@ -8,7 +8,7 @@ ReactDOM.render(
   <Sparkline
     className='visitors'
     width={document.body.offsetWidth}
-    height={200}
+    height={800}
     data={data}
   />,
   document.getElementById('mount')
