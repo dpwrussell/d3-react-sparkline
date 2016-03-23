@@ -65,10 +65,12 @@ export default class RRTT extends React.Component {
 
     }
 
+    const d3ToReact = svg.node().toReact()
+
     var date2 = new Date();
     var diff = date2 - date1; //milliseconds interval
     console.log("Time spent in RRTT render: " + diff + "ms");
 
-    return svg.node().toReact();
+    return d3ToReact;
   }
 }
